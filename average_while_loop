@@ -1,0 +1,22 @@
+// C++ Program to Find Average of N Numbers using While loop
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, i = 0;
+    float avg = 0, y;
+
+    cout << "Enter the number of elements to calculate the average::\n";
+    cin >> x;
+    
+    cout << "Enter " << x << " elements one by one\n\n";
+    while (i < x) {
+        cin >> y;
+        avg += y;
+        i++;
+    }
+    
+    avg /= x;
+    cout << "\nThe average of the entered input numbers is = " << avg;
+    return 0;
+}
